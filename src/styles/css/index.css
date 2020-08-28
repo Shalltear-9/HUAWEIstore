@@ -1,0 +1,40 @@
+@charset 'utf-8';
+.head {
+  height: 40px;
+  background-color: #2e2828;
+}
+.head > .container {
+  padding: 0;
+  height: 100%;
+}
+.head > .container > ul {
+  height: 100%;
+}
+.head > .container > ul > li {
+  height: 100%;
+  background-color: #2e2828;
+  float: left;
+  border: none;
+  border-radius: 0;
+}
+.head > .container > ul > li:not(:first-child):before {
+  content: '';
+  width: 1px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: #3c3b3b;
+}
+.head > .container > ul > li > a {
+  font-size: 8px;
+  text-decoration: none;
+  color: #919090;
+}
+.head > .container > .headleft {
+  float: left;
+}
+.head > .container > .headright {
+  float: right;
+}

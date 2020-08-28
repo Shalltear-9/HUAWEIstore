@@ -1,0 +1,44 @@
+@charset 'utf-8';
+@ratio:40/56px;
+.head{
+    height: 40px;
+    background-color: #2e2828;
+    >.container{
+        padding: 0;
+        height: 100%;
+        // background-color: cyan;
+        >ul{
+            height: 100%;
+            >li{
+                height: 100%;
+                background-color: #2e2828;
+                float: left;
+                border: none;
+                border-radius: 0;
+                &:not(:first-child):before{
+                    content: '';
+                    width: 1px;
+                    height: 15px;
+                    display: block;
+                    position: absolute;
+                    top: 13px;
+                    left: 0;
+                    background-color: #3c3b3b;
+                }
+                >a{
+                    font-size: 8px;
+                    text-decoration: none;
+                    color: #919090;
+                }
+            }
+            
+        }
+        >.headleft{
+            float: left;
+        }
+        >.headright{
+            float: right;
+        }
+        
+    }
+}
