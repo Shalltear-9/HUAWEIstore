@@ -28,13 +28,77 @@
   background-color: #3c3b3b;
 }
 .head > .container > ul > li > a {
-  font-size: 8px;
+  font-size: 10px;
   text-decoration: none;
   color: #919090;
+}
+.head > .container > ul > li > a:hover {
+  color: white;
 }
 .head > .container > .headleft {
   float: left;
 }
 .head > .container > .headright {
   float: right;
+}
+.headdown {
+  height: 91.28571429px;
+}
+.headdown > img {
+  margin-right: 20px;
+}
+.headdown > .vmall {
+  width: 263.57142857px;
+  height: 46.28571429px;
+}
+.headdown > .huaweizhuanqu {
+  width: 95.14285714px;
+  height: 30.85714286px;
+}
+.headdown > .honor {
+  width: 95.14285714px;
+  height: 30.85714286px;
+}
+.headdown > a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.headdown > a:hover {
+  color: red;
+}
+.headdown > .search {
+  width: 218.57142857px;
+  height: 28.92857143px;
+  float: right;
+}
+.headdown > .search > input {
+  height: 28.92857143px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #ccc;
+  float: left;
+  text-indent: 1em;
+}
+.headdown > .search > span {
+  display: block;
+  width: 28.92857143px;
+  height: 28.92857143px;
+  float: left;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  line-height: 28.92857143px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.headdown > .search .glyphicon {
+  top: 0;
+}
+.fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+.fixed > span {
+  display: block;
+  margin-top: 10px;
 }

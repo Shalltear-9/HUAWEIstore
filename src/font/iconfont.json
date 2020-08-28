@@ -1,0 +1,65 @@
+{
+  "id": "2034466",
+  "name": "华为登录页",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "612696",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "1513759",
+      "name": "微信",
+      "font_class": "3-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3192593",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "4948636",
+      "name": "eye-open",
+      "font_class": "eye-open",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "7471892",
+      "name": "qq",
+      "font_class": "qq1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11371861",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "14425956",
+      "name": "支付宝",
+      "font_class": "zhifubao1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "15236121",
+      "name": "icon_eye close_line",
+      "font_class": "icon_eyeclose_line",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    }
+  ]
+}
