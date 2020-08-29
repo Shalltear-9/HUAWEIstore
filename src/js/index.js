@@ -10,9 +10,9 @@ import Swiper from './modules/swiper-bundle.js';
 
 
 $(function() {
-    var mySwiper = new Swiper('.swiper-container', {
+    let mySwiper = new Swiper('.swiper-container', {
         loop: true,
-        autoplay: true, //等同于以下设置
+        autoplay: true,
         pagination: {
             clickable: true,
             el: '.swiper-pagination',
@@ -26,5 +26,14 @@ $(function() {
         mySwiper.pagination.bullets[i].onmouseover = function() {
             this.click();
         };
-    }
+    };
+    //选项卡
+    $('#list').tabs({
+        ev: "mouseover"
+    });
+    $('#list').on('mouseout', function() {
+        $('.content').removeClass('show');
+        $('#list>.list-ul>li').removeClass('active');
+    })
+
 });
