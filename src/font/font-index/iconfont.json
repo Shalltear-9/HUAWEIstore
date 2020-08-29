@@ -1,0 +1,93 @@
+{
+  "id": "2034713",
+  "name": "华为",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "118286",
+      "name": "百度",
+      "font_class": "baidu",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "1762006",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "6380567",
+      "name": "购物车",
+      "font_class": "buy-car",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "7732062",
+      "name": "日历",
+      "font_class": "rili-",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7814196",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "8781544",
+      "name": "购物",
+      "font_class": "dibudaohanglan-",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "9767847",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "11228406",
+      "name": "位置管理2",
+      "font_class": "tubiaozhizuomoban-",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "11639686",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "11942426",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "12944676",
+      "name": "头条",
+      "font_class": "toutiao",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "13614660",
+      "name": "徽章",
+      "font_class": "huizhang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

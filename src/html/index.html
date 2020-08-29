@@ -7,8 +7,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/css/reset.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css/swiper-bundle.css">
     <link rel="stylesheet" href="../styles/css/index.css">
+
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        
+        #list {
+            position: relative;
+        }
+        
+        #list .list-ul {
+            position: absolute;
+            left: 180px;
+            top: -530px;
+            z-index: 2;
+            width: 199.28571429px;
+            height: 417.85714286px;
+            border-radius: 10px;
+            box-shadow: 0 0 28px rgba(0, 0, 0, 0.08);
+            background: #ffffff;
+        }
+        
+        #list .list-ul li {
+            width: 199.28571429px;
+            height: 41.78571429px;
+            padding: 0 5px;
+        }
+        
+        #list .list-ul li span {
+            float: right;
+            padding-top: 15px;
+        }
+        
+        #list .list-ul li a {
+            display: block;
+            float: left;
+            height: 41.78571429px;
+            width: 160.71428571px;
+            line-height: 41.78571429px;
+            color: #8f8f8f;
+            font-size: 16px;
+        }
+        
+        #list .list-ul li a:hover {
+            text-decoration: none;
+            color: #ca141d;
+        }
+    </style>
+    <script src="../font/font-index/iconfont.js"></script>
     <script src="../js/index.js" type="module"></script>
+    <script src="../font/font-index/iconfont.js"></script>
 </head>
 
 <body>
@@ -35,7 +90,7 @@
         </div>
     </header>
     <div class="container headdown">
-        <img src="../images/SXppnESYv4K11DBxDFc2.png" alt="华为商城" class="vmall">
+        <img src="../images/vmall.png" alt="华为商城" class="vmall">
         <img src="../images/huaweizhuanqu.png" alt="华为专区" class="huaweizhuanqu">
         <img src="../images/honorzhuanqu.png" alt="荣耀专区" class="honor">
         <a href="#">华为P40系列</a>
@@ -48,13 +103,68 @@
         </div>
     </div>
     <div class="fixed">
-        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+        <svg class="icon icon-fixed" aria-hidden="true">
+            <use xlink:href="#icon-buy-car"></use>
+          </svg>
+        <svg class="icon icon-fixed" aria-hidden="true">
+            <use xlink:href="#icon-kefu"></use>
+          </svg>
+        <svg class="icon icon-fixed" aria-hidden="true">
+            <use xlink:href="#icon-fuwu"></use>
+          </svg>
+        <svg class="icon icon-fixed" aria-hidden="true">
+            <use xlink:href="#icon-huidaodingbu"></use>
+          </svg>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/slide-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/slide-7.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+
+    </div>
+    <!-- 二级菜单 -->
+    <div id="list" class="container-fluid">
+        <ul class="list-ul">
+            <li><a href="" class="">手机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">笔记本</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">平板</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智能穿戴&VR</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智能家居</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智慧屏</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">音响耳机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">配件</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">生态产品</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">增值服务其他</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+        </ul>
     </div>
 
-
 </body>
-
-<!-- </html><input type="submit" class="button iconfont" value=""> -->
