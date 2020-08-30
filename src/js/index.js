@@ -10,7 +10,7 @@ import Swiper from './modules/swiper-bundle.js';
 
 
 $(function() {
-    let mySwiper = new Swiper('.swiper-container', {
+    let mySwiper = new Swiper('.slide1', {
         loop: true,
         autoplay: true,
         pagination: {
@@ -22,18 +22,32 @@ $(function() {
             prevEl: ".swiper-button-prev",
         },
     });
-    for (let i = 0; i < mySwiper.pagination.bullets.length; i++) {
-        mySwiper.pagination.bullets[i].onmouseover = function() {
-            this.click();
-        };
-    };
+    // for (let i = 0; i < mySwiper.pagination.bullets.length; i++) {
+    //     mySwiper.pagination.bullets[i].onmouseover = function() {
+    //         this.click();
+    //     };
+    // };
     //选项卡
-    $('#list').tabs({
-        ev: "mouseover"
+    // $('#list').tabs({
+    //     ev: "mouseover"
+    // });
+    // $('#list').on('mouseout', function() {
+    //     $('.content').removeClass('show');
+    //     $('#list>.list-ul>li').removeClass('active');
+    // });
+
+
+    let mySwiper = new Swiper('.slide2', {
+        loop: false,
+        autoplay: false,
+        // pagination: {
+        //     clickable: true,
+        //     el: '.swiper-pagination',
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
-    $('#list').on('mouseout', function() {
-        $('.content').removeClass('show');
-        $('#list>.list-ul>li').removeClass('active');
-    })
 
 });

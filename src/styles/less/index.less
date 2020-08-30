@@ -178,7 +178,6 @@
 
 .navc{
     height: 137*@ratio;
-    border-radius: 10px;
     >.left{
         float: left;
         width: 424*@ratio;
@@ -324,3 +323,88 @@
     }
 }
 
+.newgoods{
+    height: 312*@ratio;
+    // width: 1170px;
+    margin: 20px auto;
+    >img{
+        width: 400*@ratio;
+        height: 100%;
+        float: left;
+        border-radius: 10px;
+        margin-right: 17px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 3px 3px 5px 5px #ccc;
+        }
+    }
+}
+
+
+.hot{
+    // width: 1170px;
+    // margin: 0 auto;
+    >article{
+        height: 926*@ratio;
+        >img{
+            float: left;
+            border-radius: 10px;
+            width: 360*@ratio;
+            transition: 0.5s;
+            &:hover{
+                box-shadow: 3px 3px 5px 5px #ccc;
+            }
+        }
+        >.wrapimg{
+            background-color: #f9f9f9;
+            margin: 5px;
+            padding: 13px;
+            margin-top: 0;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            transition: 0.5s;
+            &:hover{
+                box-shadow: 3px 3px 5px 5px #ccc;
+            }
+            >img{
+                width: 280*@ratio;
+            }
+            span{
+                color: red;
+            }
+        }
+    }
+}
+
+
+.recommendation{
+    width: 1170px;
+    margin: 0 auto;
+    .wrap-slide{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            >img{
+                width: 180*@ratio;
+            }
+            >h6{
+                padding: 5px;
+                border-radius: 5px;
+                background-color: #ccc;
+            }
+            >span{
+                color: red;
+            }
+        }
+    }
+}
