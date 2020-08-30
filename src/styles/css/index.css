@@ -312,6 +312,10 @@
 .newgoods > img:hover {
   box-shadow: 3px 3px 5px 5px #ccc;
 }
+.hot {
+  width: 1170px;
+  margin: 0 auto;
+}
 .hot > article {
   height: 595.28571429px;
 }
@@ -370,5 +374,170 @@
   background-color: #ccc;
 }
 .recommendation .wrap-slide > article > span {
+  color: red;
+}
+.slide3 {
+  width: 1170px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.laptop {
+  width: 1170px;
+  margin: 20px auto;
+}
+.laptop > .wrap-head {
+  overflow: hidden;
+}
+.laptop > .wrap-head > h2 {
+  float: left;
+}
+.laptop > .wrap-head > ul {
+  float: left;
+}
+.laptop > .wrap-head > ul > li {
+  float: left;
+  padding: 30px 10px;
+}
+.laptop > .wrap-head > ul > li a {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+.laptop > .wrap-head > ul > li a:hover {
+  color: red;
+}
+.laptop > p {
+  text-align: right;
+}
+.laptop > p a:hover {
+  color: red;
+}
+.laptop .wrap-laptop {
+  overflow: hidden;
+}
+.laptop .wrap-laptop > .wraplt {
+  width: 218.57142857px;
+  height: 289.28571429px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin: 7px;
+  transition: 0.5s;
+}
+.laptop .wrap-laptop > .wraplt:hover {
+  box-shadow: 3px 3px 5px 5px #ccc;
+}
+.laptop .wrap-laptop > .wraplt img {
+  width: 180px;
+}
+.laptop .wrap-laptop > .wraplt > span {
+  color: red;
+}
+.bigimg {
+  width: 1170px;
+  height: 200px;
+  margin: 20px auto;
+}
+.bigimg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+}
+footer > .wrapft {
+  width: 1170px;
+  margin: 0 auto;
+}
+footer > .wrapft > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+footer > .wrapft > ul > li {
+  float: left;
+  padding: 20px 0;
+}
+footer > .wrapft > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+footer > .wrapft > ul > li .icon {
+  font-size: 3em;
+  color: red;
+}
+footer > .wrapft .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+footer > .wrapft .about a {
+  text-decoration: none;
+  color: black;
+}
+footer > .wrapft .about a:hover {
+  color: red;
+}
+footer > .wrapft .about .wrapft-rt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+footer > .wrapft .about .wrapft-rt > span {
+  padding: 10px 20px;
+  color: white;
+  background-color: #2e2828;
+  border-radius: 30px;
+  font-size: 1.2em;
+}
+footer > .wrapft .about .wrapft-rt > span:hover {
+  background-color: #ccc;
+}
+footer > .wrapft .about .wrapft-rt > article {
+  padding-top: 10px;
+}
+footer > .wrapft .about .wrapft-rt > article > .icon {
+  font-size: 2em;
+}
+footer > .wrapft .about .wrapft-rt > article > .icon:hover {
+  color: #CCC;
+}
+footer > .last {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: cyan;
+}
+footer > .last > img {
+  widows: 82px;
+  height: 30px;
+  float: left;
+}
+footer > .last .right {
+  float: left;
+}
+footer > .last .right > ul > li {
+  float: left;
+  padding: 10px;
+}
+footer > .last a {
+  color: #ccc;
+  text-decoration: none;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+footer > .last a:hover {
   color: red;
 }

@@ -15,39 +15,49 @@ $(function() {
         autoplay: true,
         pagination: {
             clickable: true,
-            el: '.swiper-pagination',
+            el: '.slide1-pagination',
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".slide1-next",
+            prevEl: ".slide1-prve",
         },
     });
-    // for (let i = 0; i < mySwiper.pagination.bullets.length; i++) {
-    //     mySwiper.pagination.bullets[i].onmouseover = function() {
-    //         this.click();
-    //     };
-    // };
-    //选项卡
-    // $('#list').tabs({
-    //     ev: "mouseover"
-    // });
-    // $('#list').on('mouseout', function() {
-    //     $('.content').removeClass('show');
-    //     $('#list>.list-ul>li').removeClass('active');
-    // });
+    for (let i = 0; i < mySwiper.pagination.bullets.length; i++) {
+        mySwiper.pagination.bullets[i].onmouseover = function() {
+            this.click();
+        };
+    };
+
+    // 选项卡
+    $('#list').tabs({
+        ev: "mouseover"
+    });
+    $('#list').on('mouseout', function() {
+        $('.content').removeClass('show');
+        $('#list>.list-ul>li').removeClass('active');
+    });
 
 
-    let mySwiper = new Swiper('.slide2', {
+    let mySwiper1 = new Swiper('.slide2', {
         loop: false,
         autoplay: false,
-        // pagination: {
-        //     clickable: true,
-        //     el: '.swiper-pagination',
-        // },
+
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".slide2-next",
+            prevEl: ".slide2-prev",
         },
     });
-
+    let mySwiper3 = new Swiper('.slide3', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+            clickable: true,
+            el: '.slide3-pagination',
+        }
+    });
+    for (let i = 0; i < mySwiper3.pagination.bullets.length; i++) {
+        mySwiper3.pagination.bullets[i].onmouseover = function() {
+            this.click();
+        };
+    };
 });
