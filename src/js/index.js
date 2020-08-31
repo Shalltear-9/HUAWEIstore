@@ -32,7 +32,8 @@ $(function() {
     $('#list').tabs({
         ev: "mouseover"
     });
-    $('#list').on('mouseout', function() {
+
+    $('#list').on('mouseleave', function() {
         $('.content').removeClass('show');
         $('#list>.list-ul>li').removeClass('active');
     });
@@ -47,6 +48,7 @@ $(function() {
             prevEl: ".slide2-prev",
         },
     });
+
     let mySwiper3 = new Swiper('.slide3', {
         loop: true,
         autoplay: true,

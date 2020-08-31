@@ -106,33 +106,37 @@
   margin-bottom: 10px;
 }
 #list {
-  position: relative;
-  left: 180px;
-  top: -530px;
-  z-index: 2;
-  float: left;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 240px;
+  left: 185px;
 }
 #list .list-ul {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  z-index: 2;
   width: 199.28571429px;
   height: 417.85714286px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   box-shadow: 0 0 28px rgba(0, 0, 0, 0.08);
   background: #eee;
 }
 #list .list-ul li {
+  list-style: none;
   width: 199.28571429px;
   height: 41.78571429px;
   padding: 0 5px;
 }
 #list .list-ul li span {
-  float: right;
   padding-top: 15px;
 }
 #list .list-ul li a {
   display: block;
   float: left;
   height: 41.78571429px;
-  width: 160.71428571px;
+  width: 128.57142857px;
   line-height: 41.78571429px;
   color: #8f8f8f;
   font-size: 16px;
@@ -141,24 +145,26 @@
 #list .list-ul li a:hover {
   color: #ca141d;
 }
-.active {
-  background-color: white;
-}
-.content {
+#list > .content {
   display: none;
   z-index: 2;
   width: 518.78571429px;
   height: 417.85714286px;
   background-color: white;
-  opacity: 0.8;
-  position: relative;
-  top: -428px;
-  left: 199px;
+  position: absolute;
+  top: 0;
+  left: 270px;
 }
-.content > img {
+#list > .content > img {
   width: 56px;
   height: 72px;
   margin: 20px;
+}
+#list > .content:first-child {
+  display: block;
+}
+.active {
+  background-color: white;
 }
 .show {
   display: block;

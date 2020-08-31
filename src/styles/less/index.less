@@ -111,35 +111,39 @@
     }
 }
 #list{
-    // overflow: hidden;
-    position: relative;
-        left: 180px;
-        top: -530px;
-        z-index: 2;
-    float: left;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 240px;
+    left: 185px;
+        
+    // float: left;
     .list-ul{
-        
-        
+        position: absolute;
+        left: 80px;
+        top: 0;
+        z-index: 2;
         width: 310*@ratio;
         height: 650*@ratio;
-        border-radius: 10px 0 0 10px;
+        border-radius: 10px;
         box-shadow:0 0 28px rgba(0,0,0,0.08);
         background: #eee;
 
         li{
+            list-style: none;
             width: 310*@ratio;
             height: 65*@ratio;
             padding: 0 5px;
 
             span{
-                float: right;
+                // float: right;
                 padding-top: 15px;
             }
             a{
                 display: block;
                 float: left;
                 height: 65*@ratio;
-                width: 250*@ratio;
+                width: 200*@ratio;
                 line-height: 65*@ratio;
                 color: #8f8f8f;
                 font-size: 16px;
@@ -150,27 +154,28 @@
             }
         }
     }
+    >.content{
+        display: none;
+        z-index: 2;
+        width: 807*@ratio;
+        height: 650*@ratio;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 270px;
+        >img{
+            width: 56px;
+            height: 72px;
+            margin: 20px;
+        }
+        &:first-child{
+            display: block;
+        }
+    }
 }
 .active{
     background-color: white;
 
-}
-.content{
-    display: none;
-    z-index: 2;
-    width: 807*@ratio;
-    height: 650*@ratio;
-    background-color: white;
-    opacity: 0.8;
-    position: relative;
-    top: -428px;
-    left: 199px;
-    // float: left;
-    >img{
-        width: 56px;
-        height: 72px;
-        margin: 20px;
-    }
 }
 .show{
     display: block;
@@ -587,3 +592,4 @@ footer{
         }
     }
 }
+

@@ -1,7 +1,220 @@
 @charset 'utf-8';
-li {
-  list-style: none;
+.head {
+  height: 40px;
+  background-color: #2e2828;
 }
-a {
+.head > .container {
+  padding: 0;
+  height: 100%;
+}
+.head > .container > ul {
+  height: 100%;
+}
+.head > .container > ul > li {
+  height: 100%;
+  background-color: #2e2828;
+  float: left;
+  border: none;
+  border-radius: 0;
+}
+.head > .container > ul > li:not(:first-child):before {
+  content: '';
+  width: 1px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: #3c3b3b;
+}
+.head > .container > ul > li > a {
+  font-size: 10px;
   text-decoration: none;
+  color: #919090;
+}
+.head > .container > ul > li > a:hover {
+  color: white;
+}
+.head > .container > .headleft {
+  float: left;
+}
+.head > .container > .headright {
+  float: right;
+}
+.headdown {
+  height: 91.28571429px;
+}
+.headdown > img {
+  margin-right: 20px;
+}
+.headdown > .vmall {
+  width: 199.28571429px;
+  height: 32.14285714px;
+}
+.headdown > span {
+  font-size: 1.5em;
+  padding: 25px 10px 50px 0;
+}
+.headdown > span:hover {
+  color: red;
+}
+.headdown > .huaweizhuanqu {
+  width: 95.14285714px;
+  height: 30.85714286px;
+}
+.headdown > .honor {
+  width: 95.14285714px;
+  height: 30.85714286px;
+}
+.headdown > a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.headdown > a:hover {
+  color: red;
+}
+.headdown > .search {
+  width: 218.57142857px;
+  height: 28.92857143px;
+  float: right;
+}
+.headdown > .search > input {
+  height: 28.92857143px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #ccc;
+  float: left;
+  text-indent: 1em;
+}
+.headdown > .search > span {
+  display: block;
+  width: 28.92857143px;
+  height: 28.92857143px;
+  float: left;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  line-height: 28.92857143px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.headdown > .search .glyphicon {
+  top: 0;
+}
+#list {
+  width: 800px;
+  height: 500px;
+  display: none;
+  position: absolute;
+  top: 131px;
+  left: 185px;
+}
+#list .list-ul {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  z-index: 2;
+  width: 199.28571429px;
+  height: 417.85714286px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.08);
+  background: #eee;
+}
+#list .list-ul li {
+  list-style: none;
+  width: 199.28571429px;
+  height: 41.78571429px;
+  padding: 0 5px;
+}
+#list .list-ul li span {
+  padding-top: 15px;
+}
+#list .list-ul li a {
+  display: block;
+  float: left;
+  height: 41.78571429px;
+  width: 128.57142857px;
+  line-height: 41.78571429px;
+  color: #8f8f8f;
+  font-size: 16px;
+  text-decoration: none;
+}
+#list .list-ul li a:hover {
+  color: #ca141d;
+}
+#list > .content {
+  display: none;
+  z-index: 2;
+  width: 518.78571429px;
+  height: 417.85714286px;
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 270px;
+}
+#list > .content > img {
+  width: 56px;
+  height: 72px;
+  margin: 20px;
+}
+#list > .content:first-child {
+  display: block;
+}
+.active {
+  background-color: white;
+}
+.show {
+  display: block;
+}
+.title {
+  background-color: red;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: cyan;
+}
+.main > .imgpreview {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main > .imgpreview > .imgwrap {
+  width: 400px;
+  height: 400px;
+}
+.main > .imgpreview > .imgwrap > img {
+  width: 100%;
+}
+.main > .imgpreview > .imgwrap > img:last-child {
+  width: 400px;
+  height: 400px;
+}
+.main > .imgpreview .swiper-container {
+  width: 400px;
+}
+.main > .imgpreview .swiper-slide {
+  width: 80px;
+  height: 80px;
+}
+.main > .imgpreview .swiper-slide > img {
+  width: 100%;
+}
+.main > .imgpreview .swiper-button-prev,
+.main > .imgpreview .swiper-container-rtl .swiper-button-next {
+  left: 0;
+  right: auto;
+}
+.main > .imgpreview .swiper-button-next,
+.main > .imgpreview .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+  left: auto;
+}
+.main > .content {
+  width: 50%;
+  height: 600px;
+  background-color: darkblue;
 }

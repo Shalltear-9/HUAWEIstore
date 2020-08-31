@@ -5,32 +5,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css/swiper-bundle.css">
     <link rel="stylesheet" href="../styles/css/detailpage.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/detailpage.js" type="module"></script>
 </head>
 
 <body>
-    <header class="head">
-        <div class="headbg">
-            <ul class="headleft">
-                <li><a href="#">首页</a></li>
-                <li "><a href="# ">华为官网</a></li>
-                <li"><a href="#">荣耀官网</a></li>
-                <li "><a href="# ">花粉俱乐部</a></li>
-                <li"><a href="#">V码(优购码)</a></li>
-                <li "><a href="# ">企业购</a></li>
-                <li"><a href="#">Select Region</a></li>
-                <li "><a href="# ">更多精彩</a></li>
+    <header class="container-fluid head">
+        <div class="container">
+            <ul class="list-group headleft">
+                <li class="list-group-item nobefore"><a href="#">首页</a></li>
+                <li class="list-group-item"><a href="#">华为官网</a></li>
+                <li class="list-group-item"><a href="#">荣耀官网</a></li>
+                <li class="list-group-item"><a href="#">花粉俱乐部</a></li>
+                <li class="list-group-item"><a href="#">V码(优购码)</a></li>
+                <li class="list-group-item"><a href="#">企业购</a></li>
+                <li class="list-group-item"><a href="#">Select Region</a></li>
+                <li class="list-group-item"><a href="#">更多精彩</a></li>
             </ul>
-            <ul class="headright ">
-                <li><a href="./login.html ">请登录</a>&nbsp;&nbsp;<a href="# ">注册</a></li>
-                <li"><a href="#">我的订单</a></li>
-                <li "><a href="# ">客户服务</a></li>
-                <li"><a href="#">网站导航</a></li>
-                <li "><a href="# ">手机版</a></li>
-                <li"><a href="#">购物车&nbsp;()</a></li>
+            <ul class="list-group headright">
+                <li class="list-group-item nobefore"><a href="./login.html">请登录</a>&nbsp;&nbsp;<a href="#">注册</a></li>
+                <li class="list-group-item"><a href="#">我的订单</a></li>
+                <li class="list-group-item"><a href="#">客户服务</a></li>
+                <li class="list-group-item"><a href="#">网站导航</a></li>
+                <li class="list-group-item"><a href="#">手机版</a></li>
+                <li class="list-group-item"><a href="#">购物车&nbsp;()</a></li>
             </ul>
         </div>
     </header>
+
+    <div class="container headdown">
+        <img src="../images/vmall.png" alt="华为商城" class="vmall">
+        <span>全部商品分类</span>
+        <img src="../images/huaweizhuanqu.png" alt="华为专区" class="huaweizhuanqu">
+        <img src="../images/honorzhuanqu.png" alt="荣耀专区" class="honor">
+        <a href="#">华为P40系列</a>
+        <a href="#">荣耀30系列</a>
+        <a href="#">安心居家</a>
+        <div class="search">
+            <input type="text">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <!-- <input type="submit" class="glyphicon glyphicon-search" aria-hidden="true"> -->
+        </div>
+    </div>
+
+    <div id="list">
+        <ul class="list-ul">
+            <li><a href="" class="">手机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">笔记本</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">平板</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智能穿戴&VR</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智能家居</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">智慧屏</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">音响耳机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">配件</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">生态产品</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+            <li><a href="" class="">增值服务其他</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+        </ul>
+
+        <!-- 选项卡 content -->
+        <div class="content">
+            <img src="../images/tabs/content-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content2-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content2-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content2-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content2-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content-7.png" alt=""><span>华为P系列</span>
+        </div>
+        <div class="content">
+            <img src="../images/tabs/content2-1.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-2.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-3.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-4.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-5.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-6.png" alt=""><span>华为P系列</span>
+            <img src="../images/tabs/content2-7.png" alt=""><span>华为P系列</span>
+        </div>
+    </div>
+    <p class="title container">
+        <a href="#">首页</a>
+    </p>
+    <main class="container main">
+        <div class="imgpreview">
+            <div class="imgwrap">
+                <img src="../images/detailpage/pc5-1.png" alt="">
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/detailpage/pc5-6.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="content"></div>
+    </main>
 </body>
 
 </html>
