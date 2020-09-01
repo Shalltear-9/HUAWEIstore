@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>商品详情页</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/css/swiper-bundle.css">
     <link rel="stylesheet" href="../styles/css/detailpage.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/detailpage.js" type="module"></script>
+    <style>
+        #exzoom {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,6 +59,7 @@
         </div>
     </div>
 
+    <!-- 选项卡 -->
     <div id="list">
         <ul class="list-ul">
             <li><a href="" class="">手机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
@@ -163,36 +171,57 @@
     </p>
     <main class="container main">
         <div class="imgpreview">
-            <div class="imgwrap">
-                <img src="../images/detailpage/pc5-1.png" alt="">
-            </div>
-
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-1.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-2.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-3.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-4.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-5.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../images/detailpage/pc5-6.png" alt="">
-                    </div>
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="contentright">
+            <div class="serve">
+                <p>服务说明<span class="addr">浙江>杭州>江干区</span><span class="now">现货</span>,今天21:59前付款，预计9月2日送达</p>
+                <p>商品编码:<span>2801010039701</span></p>
+            </div>
+            <div class="chosecolor">
+                <p>选择颜色</p>
+                <div class="silver">
+                    <img src="../images/detailpage/pc5-1.png" alt="">冰河银
+                </div>
+                <div class="gray">
+                    <img src="../images/detailpage/pc5-1.png" alt="">星空灰
+                </div>
+            </div>
+            <div class="chosedeploy">
+                <p>选择配置</p>
+                <div class="normal">
+                    R5|8GB|256GB|7nm新品
+                </div>
+                <div class="strong">
+                    R5|16GB|512GB|7nm新品
+                </div>
+                <div class="stronger">
+                    R7|16GB|512GB|7nm新品
+                </div>
+            </div>
+            <div class="serve">
+                <p>选择套餐<span>官方标配</span></p>
+            </div>
+            <div class="recommend">
+                <p>推荐<span>荣耀手表2 Magicwatch2</span><span>荣耀蓝牙便携鼠标</span><span>荣耀极简背包</span></p>
+            </div>
+            <div class="shopcar">
+                <div class="input">
+                    <input type="text" min="0" value="1">
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+                <span class="join">加入购物车</span>
+                <span class="buy">立即下单</span>
+            </div>
+        </div>
+
     </main>
 </body>
 

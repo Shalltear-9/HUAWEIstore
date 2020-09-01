@@ -183,31 +183,32 @@
     display: block;
 }
 
-.title{
-    background-color: red;
-}
 .main{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    background-color: cyan;
+    
     >.imgpreview{
-        width: 50%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
         >.imgwrap{
             width: 400px;
             height: 400px;
+            
             >img{
+                
                 width: 100%;
                 &:last-child{
                     width: 400px;
                     height: 400px;
                 }
             }
+            
         }
+        
         .swiper-container {
             width: 400px;
             // height: 50px;
@@ -215,10 +216,13 @@
         .swiper-slide{
             width: 80px;
             height: 80px;
-            
+            &:hover{
+                border: 1px solid red;
+            }
             >img{
                 width: 100%;
             }
+            
         }
         .swiper-button-prev,
         .swiper-container-rtl .swiper-button-next {
@@ -232,9 +236,128 @@
         }
 
     }
-    >.content{
-        width: 50%;
+    >.contentright{
+        width: 60%;
         height: 600px;
-        background-color: darkblue;
+        >.price{
+            padding: 10px 20px;
+            background-color: #ccc;
+            span{
+                color: red;
+                margin: 0 30px;
+            }
+            .red{
+                border: 1px solid red;
+                color: red;
+                padding: 3px 7px;
+            }
+        }
+        >.serve{
+            user-select: none;
+            padding: 10px 20px;
+            
+            .addr{
+                margin: 0 30px;
+                padding: 5px;
+                border: 1px solid #ccc;
+
+            }
+            .now{
+                color: red;
+            }
+            p:last-child span{
+                margin-left: 30px;
+            }
+        }
+        >.chosecolor{
+            overflow: hidden;
+            user-select: none;
+            >p{
+                float: left;
+                line-height: 43px;
+                margin-left: 30px;
+            }
+            >div{
+                float: left;
+                margin-left: 30px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                cursor: pointer;
+                >img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .active2{
+            border-color: red;
+        }
+        }
+        
+        .chosedeploy{
+            overflow: hidden;
+            >p{
+                float: left;
+                line-height: 43px;
+                margin-left: 30px;
+            }
+            >div{
+                float: left;
+                margin-left: 10px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .active2{
+                border-color: red;
+            }
+        }
+        >.recommend{
+            margin: 20px;
+            >p{
+                span{
+                    margin-left: 30px;
+                    background-color: #f5f5f5;
+                    padding: 5px 10px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .shopcar{
+            overflow: hidden;
+            margin: 30px;
+            >.input{
+                width: 80px;
+                float: left;
+                >input{
+                    font-size: 2em;
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                }
+                button{
+                    width: 24px;
+                    height: 25px;
+                    float: left;
+                }
+            }
+            >span{
+                margin: 0 20px;
+                float: left;
+            }
+            >.join{
+                font-size: 1.3em;
+                color: white;
+                padding: 10px 30px;
+                background-color: #fc600c;
+            }
+            >.buy{
+                font-size: 1.3em;
+                color: white;
+                padding: 10px 30px;
+                background-color: #ca151d;
+            }
+        }
     }
 }

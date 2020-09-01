@@ -62,4 +62,31 @@ $(function() {
             this.click();
         };
     };
+
+    (function() {
+        $.ajax({
+            type: "get",
+            url: "../interface/index.php",
+            dataType: "json",
+            success: function(res) {
+                let temp = '';
+                res.forEach(elm => {
+                    let picture = JSON.parse(elm.picture);
+                    temp += `<div class="wraplt">
+                    <a href="./detailpage.html?id=${elm.id}">
+                    <img src="${picture[0].src}" alt="">
+                    <h5>${elm.name}</h5>
+                    <p>${elm.intro}</p>
+                    <span>￥${elm.price}</span>
+                    </a>
+                </div>`;
+                });
+                $('.wrap-laptop').append(temp);
+            }
+        });
+    })();
+
+
+
+
 });

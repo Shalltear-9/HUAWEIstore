@@ -166,18 +166,14 @@
 .show {
   display: block;
 }
-.title {
-  background-color: red;
-}
 .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  background-color: cyan;
 }
 .main > .imgpreview {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +196,9 @@
   width: 80px;
   height: 80px;
 }
+.main > .imgpreview .swiper-slide:hover {
+  border: 1px solid red;
+}
 .main > .imgpreview .swiper-slide > img {
   width: 100%;
 }
@@ -213,8 +212,122 @@
   right: 0;
   left: auto;
 }
-.main > .content {
-  width: 50%;
+.main > .contentright {
+  width: 60%;
   height: 600px;
-  background-color: darkblue;
+}
+.main > .contentright > .price {
+  padding: 10px 20px;
+  background-color: #ccc;
+}
+.main > .contentright > .price span {
+  color: red;
+  margin: 0 30px;
+}
+.main > .contentright > .price .red {
+  border: 1px solid red;
+  color: red;
+  padding: 3px 7px;
+}
+.main > .contentright > .serve {
+  user-select: none;
+  padding: 10px 20px;
+}
+.main > .contentright > .serve .addr {
+  margin: 0 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.main > .contentright > .serve .now {
+  color: red;
+}
+.main > .contentright > .serve p:last-child span {
+  margin-left: 30px;
+}
+.main > .contentright > .chosecolor {
+  overflow: hidden;
+  user-select: none;
+}
+.main > .contentright > .chosecolor > p {
+  float: left;
+  line-height: 43px;
+  margin-left: 30px;
+}
+.main > .contentright > .chosecolor > div {
+  float: left;
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+.main > .contentright > .chosecolor > div > img {
+  width: 20px;
+  height: 20px;
+}
+.main > .contentright > .chosecolor .active2 {
+  border-color: red;
+}
+.main > .contentright .chosedeploy {
+  overflow: hidden;
+}
+.main > .contentright .chosedeploy > p {
+  float: left;
+  line-height: 43px;
+  margin-left: 30px;
+}
+.main > .contentright .chosedeploy > div {
+  float: left;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+.main > .contentright .chosedeploy .active2 {
+  border-color: red;
+}
+.main > .contentright > .recommend {
+  margin: 20px;
+}
+.main > .contentright > .recommend > p span {
+  margin-left: 30px;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+}
+.main > .contentright > .recommend > p span:hover {
+  color: red;
+}
+.main > .contentright .shopcar {
+  overflow: hidden;
+  margin: 30px;
+}
+.main > .contentright .shopcar > .input {
+  width: 80px;
+  float: left;
+}
+.main > .contentright .shopcar > .input > input {
+  font-size: 2em;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.main > .contentright .shopcar > .input button {
+  width: 24px;
+  height: 25px;
+  float: left;
+}
+.main > .contentright .shopcar > span {
+  margin: 0 20px;
+  float: left;
+}
+.main > .contentright .shopcar > .join {
+  font-size: 1.3em;
+  color: white;
+  padding: 10px 30px;
+  background-color: #fc600c;
+}
+.main > .contentright .shopcar > .buy {
+  font-size: 1.3em;
+  color: white;
+  padding: 10px 30px;
+  background-color: #ca151d;
 }

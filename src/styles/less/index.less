@@ -8,7 +8,8 @@
         height: 100%;
         >ul{
             height: 100%;
-            >li{
+            >.list-group-item{
+                padding: 10px 13px;
                 height: 100%;
                 background-color: #2e2828;
                 float: left;
@@ -469,11 +470,16 @@
             &:hover{
                 box-shadow: 3px 3px 5px 5px #ccc;
             }
-            img{
-                width: 280*@ratio;
-            }
-            >span{
-                color: red;
+            
+            >a{
+                text-decoration: none;
+                display: block;
+                >img{
+                    width: 280*@ratio;
+                }
+                >span{
+                    color: red;
+                }
             }
         }
     }

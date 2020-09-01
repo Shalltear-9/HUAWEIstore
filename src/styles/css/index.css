@@ -10,14 +10,15 @@
 .head > .container > ul {
   height: 100%;
 }
-.head > .container > ul > li {
+.head > .container > ul > .list-group-item {
+  padding: 10px 13px;
   height: 100%;
   background-color: #2e2828;
   float: left;
   border: none;
   border-radius: 0;
 }
-.head > .container > ul > li:not(:first-child):before {
+.head > .container > ul > .list-group-item:not(:first-child):before {
   content: '';
   width: 1px;
   height: 15px;
@@ -27,12 +28,12 @@
   left: 0;
   background-color: #3c3b3b;
 }
-.head > .container > ul > li > a {
+.head > .container > ul > .list-group-item > a {
   font-size: 10px;
   text-decoration: none;
   color: #919090;
 }
-.head > .container > ul > li > a:hover {
+.head > .container > ul > .list-group-item > a:hover {
   color: white;
 }
 .head > .container > .headleft {
@@ -436,10 +437,14 @@
 .laptop .wrap-laptop > .wraplt:hover {
   box-shadow: 3px 3px 5px 5px #ccc;
 }
-.laptop .wrap-laptop > .wraplt img {
+.laptop .wrap-laptop > .wraplt > a {
+  text-decoration: none;
+  display: block;
+}
+.laptop .wrap-laptop > .wraplt > a > img {
   width: 180px;
 }
-.laptop .wrap-laptop > .wraplt > span {
+.laptop .wrap-laptop > .wraplt > a > span {
   color: red;
 }
 .bigimg {
