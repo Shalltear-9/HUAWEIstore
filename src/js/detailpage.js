@@ -46,7 +46,7 @@ $(function() {
                         <p>价&nbsp;&nbsp;&nbsp;&nbsp;格<span>￥${res.price}</span></p>
                         <p>促&nbsp;&nbsp;&nbsp;&nbsp;销<span class="red">赠送积分</span>购买即赠商城积分，积分可抵现~</p>
                     </div>`;
-                    tempname = ` &gt; <a href="#">笔记本电脑</a> &gt; <a href="#">${res.name}</a>`;
+                    tempname = ` &gt; <a href="#">笔记本电脑</a> &gt; <a href="#">${res.title}</a>`;
                 });
                 let temp = `<div class="imgwrap">
                 <img src="${picture[0].src}" alt="">
@@ -56,27 +56,59 @@ $(function() {
                 $('.swiper-wrapper').append(template);
                 $('.contentright').prepend(temptitle);
                 $('.title').append(tempname);
+
+                $('.join').on('click', function() {
+                    addItem(res.id, res.price, $('.input>input').val());
+                })
             }
         });
-        let swiper = new Swiper('.swiper-container', {
-            slidesPerView: 5,
-            spaceBetween: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
 
+        //向cookie中存数据
+        function addItem(id, price, num) {
+            // console.log(id, price, num);
+            let shop = cookie.get('shop');
+            let goods = {
+                id: id,
+                price: price,
+                num: num
+            }
+            if (shop) {
+                shop = JSON.parse(shop);
+                if (shop.some(elm => elm.id === id)) {
+                    // console.log('有');
+                    shop.forEach(elm => {
+                        elm.id === id ? elm.num = num : null;
+                    });
+                } else {
+                    shop.push(goods);
+                }
+            } else {
+                shop = [];
+                shop.push(goods);
+            }
+            cookie.set('shop', JSON.stringify(shop), 2);
+        }
 
-
+        //事件
         $('.swiper-wrapper').on('mouseover', '.swiper-slide>img', function() {
             $('.imgwrap>img').attr('src', $(this).attr('src'));
         });
+
+
     })();
+
+    let swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
 
 
