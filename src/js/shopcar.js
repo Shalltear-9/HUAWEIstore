@@ -1,6 +1,5 @@
 import $ from './modules/jquery.js';
 import { cookie } from './modules/cookie.js';
-import { addItem } from './modules/addItem.js';
 $(function() {
     (function() {
         let shop = cookie.get('shop');
@@ -24,7 +23,7 @@ $(function() {
                         <div class="middle-inner container">
                         <div class="wrap-left">
                         <div class="checkbox">
-                            <input type="checkbox" class="check" checked>
+                            <input type="checkbox" class="check check-future" checked>
                         </div>
                         <div class="img">
                             <img src="${picture[0].src}" alt="">
@@ -53,6 +52,7 @@ $(function() {
                             `;
                     });
                     $('.middle').append(temp);
+
 
                     // 改变选取商品数量
                     let ck = JSON.parse(cookie.get('shop'));
@@ -104,7 +104,7 @@ $(function() {
                         });
                     });
 
-                    //点按钮
+                    //点击加减按钮改变商品数量
                     $('.middle').on('click', 'button', function() {
                         let id = $(event.target.parentNode).children('input').attr('name');
                         let price;
@@ -120,6 +120,72 @@ $(function() {
                         cookie.set('shop', JSON.stringify(ck), 2);
 
                     });
+
+                    //全选
+                    $('.top>.left>.check').on('click', function() {
+                        $('.check-future').prop('checked', $(this).prop('checked'));
+
+                        //判断全选按钮是否按下
+                        if ($('.top>.left>.check').prop('checked')) {
+                            $('.calc>p:last').html(`已选择${count}件商品`);
+                            $('.calc>p:first>span').html(`￥${sumAll}`);
+                        } else {
+                            $('.calc>p:last').html(`已选择${0}件商品`);
+                            $('.calc>p:first>span').html(`￥${0}`);
+                        }
+
+                    });
+
+                    //遍历商品的复选框，判断是否被选中
+                    $('.middle').on('click', '.check-future', function() {
+                        let flag = (Array.from($('.check-future')).every(elm => elm.checked));
+                        if (flag) {
+                            $('.top>.left>.check').prop('checked', true);
+                        } else {
+                            $('.top>.left>.check').prop('checked', false);
+                        }
+
+                        //点击复选框改变总价和数量
+                        let id = $(event.target).parents('.middle-inner').children('.wrap-right').children('.num').children('input').attr('name');
+                        ck.forEach(elm => {
+                            if (elm.id === id) {
+                                if ($(event.target).prop('checked')) {
+                                    sumAll += parseInt(elm.price * elm.num);
+                                    $('.calc>p:first>span').html(`￥${sumAll}`);
+                                    count += parseInt(elm.num);
+                                    $('.calc>p:last').html(`已选择${count}件商品`);
+                                } else {
+                                    sumAll -= parseInt(elm.price * elm.num);
+                                    $('.calc>p:first>span').html(`￥${sumAll}`);
+                                    count -= elm.num;
+                                    $('.calc>p:last').html(`已选择${count}件商品`);
+                                }
+
+                            }
+                        });
+                    });
+
+                    //删除
+                    $('.middle').on('click', '.del', function() {
+                        event.preventDefault();
+                        $(event.target).parents('.middle-inner').remove();
+                        let id = $(event.target).parents('.middle-inner').children('.wrap-right').children('.num').children('input').attr('name');
+                        ck.forEach((elm, i) => {
+                            if (elm.id === id) {
+                                sumAll -= parseInt(elm.price * elm.num);
+                                $('.calc>p:first>span').html(`￥${sumAll}`);
+                                count -= elm.num;
+                                $('.calc>p:last').html(`已选择${count}件商品`);
+                                // console.log(elm, i);
+                                ck.splice(i, 1);
+                                // console.log(ck);
+                                cookie.remove('shop');
+                                cookie.set('shop', JSON.stringify(ck), 2);
+                            }
+                        });
+
+                    });
+
                 }
             });
 
